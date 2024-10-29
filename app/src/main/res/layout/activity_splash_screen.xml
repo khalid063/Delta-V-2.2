@@ -5,23 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center_vertical"
+    android:gravity="center"
     tools:context=".SplashScreenActivity"
     android:background="@color/white">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Splash Screen Activity"
-        android:layout_gravity="center_horizontal"
-        />
 
-    <Button
-        android:id="@+id/roll_button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Roll"
-        />
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <!-- ImageView for displaying the logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_delta"
+            android:contentDescription="@string/logo_desc" />
+
+        <!-- Loader Spinner -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            android:indeterminate="true" />
+
+
+    </LinearLayout>
 
 </LinearLayout>
