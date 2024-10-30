@@ -151,7 +151,7 @@
                            android:layout_width="wrap_content"
                            android:layout_height="50dp"
                            android:layout_gravity="center"
-                           android:src="@drawable/ic_leave_application"
+                           android:src="@drawable/ic_attendance_time_start"
                            android:contentDescription="@string/logo_desc"
                            android:padding="8dp" />
 
@@ -230,7 +230,7 @@
                            android:layout_width="wrap_content"
                            android:layout_height="50dp"
                            android:layout_gravity="center"
-                           android:src="@drawable/ic_leave_application"
+                           android:src="@drawable/ic_attendance_end_time"
                            android:contentDescription="@string/logo_desc"
                            android:padding="8dp" />
 
