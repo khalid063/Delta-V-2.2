@@ -48,44 +48,7 @@
         </androidx.cardview.widget.CardView>
 
 
-        <!--        <androidx.cardview.widget.CardView-->
-<!--            android:layout_width="100dp"-->
-<!--            android:layout_height="100dp"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            app:cardElevation="0dp"-->
-<!--            app:cardCornerRadius="8dp"-->
-<!--            app:cardBackgroundColor="@android:color/transparent"-->
-<!--            app:cardPreventCornerOverlap="true"-->
-<!--            app:cardUseCompatPadding="true"-->
-<!--            android:layout_gravity="center_horizontal"-->
-<!--            android:layout_margin="8dp">-->
 
-<!--            &lt;!&ndash; Border around the card &ndash;&gt;-->
-<!--            <View-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:background="@drawable/card_border" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/logoImageView"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="100dp"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:src="@drawable/delta_logo_splash_screen"-->
-<!--                android:contentDescription="@string/logo_desc"-->
-<!--                android:padding="8dp" />-->
-
-<!--        </androidx.cardview.widget.CardView>-->
-
-
-        <!--        <ImageView-->
-<!--            android:id="@+id/logoImageView"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="50sp"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:layout_gravity="center_horizontal"-->
-<!--            android:src="@drawable/delta_logo_splash_screen"-->
-<!--            android:contentDescription="@string/logo_desc" />-->
 
         <!-- Loader Spinner -->
 
@@ -100,7 +63,6 @@
             android:visibility="visible"
             android:indeterminate="true"
             android:indeterminateDrawable="@drawable/circular_progress" />
-
 
 
         <!--        <ProgressBar-->
