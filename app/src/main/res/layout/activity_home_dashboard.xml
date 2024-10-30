@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeDashboardActivity"
-    android:background="@color/white"
+    android:background="@color/primaryColorShadRedAccent"
     android:orientation="vertical">
 
 <!--    <androidx.appcompat.widget.Toolbar-->
@@ -17,6 +17,7 @@
 <!--        app:layout_constraintEnd_toEndOf="parent"-->
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
 
     <!-- Top bar  -->
     <LinearLayout
@@ -58,11 +59,11 @@
         </LinearLayout>
 
 
-<!--        <View-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="10"-->
-<!--            android:background="@color/your_custom_color" />-->
+        <!--        <View-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_weight="10"-->
+        <!--            android:background="@color/your_custom_color" />-->
 
         <LinearLayout
             android:layout_width="0dp"
@@ -94,211 +95,223 @@
 
     </LinearLayout>
 
-    <!-- Body Menu Part 01 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@color/your_custom_color"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="10"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="@color/white">
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/approve" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Attendance Report"
-                android:textSize="13sp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="10"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="@color/white">
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_leave_application" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Leave Application"
-                android:textSize="13sp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                />
-        </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:background="@drawable/home_background"
+       >
 
 
-        <!--        <View-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_weight="10"-->
-        <!--            android:background="@color/your_custom_color" />-->
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="10"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="@color/white">
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_authorization" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Authorization"
-                android:textSize="13sp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                />
-        </LinearLayout>
+       <!-- Body Menu Part 01 -->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:layout_marginTop="50dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:background="@color/your_custom_color"
+           android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="10"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="@color/white">
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_site_visited" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Site Visited"
-                android:textSize="13sp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                />
-        </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="10"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:background="@color/white">
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:src="@drawable/approve" />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Attendance Report"
+                   android:textSize="13sp"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   />
+           </LinearLayout>
 
-    </LinearLayout>
-
-    <!-- Body Menu Part 02 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@color/your_custom_color"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="10"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="@color/white">
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_order" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Today's Order"
-                android:textSize="13sp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="10"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="@color/white">
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_pre_order" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pre Order"
-                android:textSize="13sp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                />
-        </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="10"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:background="@color/white">
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:src="@drawable/ic_leave_application" />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Leave Application"
+                   android:textSize="13sp"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   />
+           </LinearLayout>
 
 
-        <!--        <View-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_weight="10"-->
-        <!--            android:background="@color/your_custom_color" />-->
+           <!--        <View-->
+           <!--            android:layout_width="0dp"-->
+           <!--            android:layout_height="match_parent"-->
+           <!--            android:layout_weight="10"-->
+           <!--            android:background="@color/your_custom_color" />-->
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="10"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="@color/white">
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_sales_return" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sales Return"
-                android:textSize="13sp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                />
-        </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="10"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:background="@color/white">
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:src="@drawable/ic_authorization" />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Authorization"
+                   android:textSize="13sp"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   />
+           </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="10"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="@color/white">
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_collection" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Collection"
-                android:textSize="13sp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                />
-        </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="10"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:background="@color/white">
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:src="@drawable/ic_site_visited" />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Site Visited"
+                   android:textSize="13sp"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   />
+           </LinearLayout>
 
-    </LinearLayout>
+       </LinearLayout>
+
+       <!-- Body Menu Part 02 -->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:background="@color/your_custom_color"
+           android:orientation="horizontal">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="10"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:background="@color/white">
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:src="@drawable/ic_order" />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Today's Order"
+                   android:textSize="13sp"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="10"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:background="@color/white">
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:src="@drawable/ic_pre_order" />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Pre Order"
+                   android:textSize="13sp"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   />
+           </LinearLayout>
+
+
+           <!--        <View-->
+           <!--            android:layout_width="0dp"-->
+           <!--            android:layout_height="match_parent"-->
+           <!--            android:layout_weight="10"-->
+           <!--            android:background="@color/your_custom_color" />-->
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="10"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:background="@color/white">
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:src="@drawable/ic_sales_return" />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Sales Return"
+                   android:textSize="13sp"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="10"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:background="@color/white">
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:src="@drawable/ic_collection" />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Collection"
+                   android:textSize="13sp"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   />
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
 
 
 ?
