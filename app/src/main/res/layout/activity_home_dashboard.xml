@@ -217,11 +217,11 @@
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/approve" />
+                android:src="@drawable/ic_order" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Attendance Report"
+                android:text="Today's Order"
                 android:textSize="13sp"
                 android:gravity="center"
                 android:textColor="@color/black"
@@ -238,11 +238,11 @@
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/approve" />
+                android:src="@drawable/ic_pre_order" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Attendance Report"
+                android:text="Pre Order"
                 android:textSize="13sp"
                 android:gravity="center"
                 android:textColor="@color/black"
@@ -266,11 +266,11 @@
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/approve" />
+                android:src="@drawable/ic_sales_return" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Attendance Report"
+                android:text="Sales Return"
                 android:textSize="13sp"
                 android:gravity="center"
                 android:textColor="@color/black"
@@ -287,11 +287,11 @@
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/approve" />
+                android:src="@drawable/ic_collection" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Attendance Report"
+                android:text="Collection"
                 android:textSize="13sp"
                 android:gravity="center"
                 android:textColor="@color/black"
