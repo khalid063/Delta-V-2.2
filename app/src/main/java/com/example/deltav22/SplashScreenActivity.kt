@@ -22,7 +22,7 @@ class SplashScreenActivity : AppCompatActivity() {
         // Simulate loading
         Handler().postDelayed({
             // Navigate to MainActivity after 3 seconds
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, HomeDashboardActivity::class.java))
             finish()
         }, 3000) // 3 seconds delay
 
