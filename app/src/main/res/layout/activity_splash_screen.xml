@@ -48,8 +48,6 @@
         </androidx.cardview.widget.CardView>
 
 
-
-
         <!-- Loader Spinner -->
 
         <ProgressBar
