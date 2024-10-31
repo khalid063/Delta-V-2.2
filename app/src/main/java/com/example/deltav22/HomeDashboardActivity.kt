@@ -29,6 +29,7 @@ class HomeDashboardActivity : AppCompatActivity() {
             window.statusBarColor = ContextCompat.getColor(this, R.color.pColorShadForStatusBar) // Replace with your color
         }
 
+        /// -------------------------------------------- Drawar setup code ----------------------------------------------///
         drawerLayout = findViewById(R.id.drawer_layout)
         val navigationView: NavigationView = findViewById(R.id.navigation_view)
 
@@ -48,7 +49,19 @@ class HomeDashboardActivity : AppCompatActivity() {
                     // Handle "Settings" action
                     true
                 }
-                R.id.nav_logout -> {
+                R.id.nav_logout2 -> {
+                    // Handle "Logout" action
+                    true
+                }
+                R.id.nav_logout3 -> {
+                    // Handle "Logout" action
+                    true
+                }
+                R.id.nav_logout4 -> {
+                    // Handle "Logout" action
+                    true
+                }
+                R.id.nav_logout5 -> {
                     // Handle "Logout" action
                     true
                 }
