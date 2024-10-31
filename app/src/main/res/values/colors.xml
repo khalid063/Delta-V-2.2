@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="your_custom_color">#E85BF11A</color>
+    <color name="AppBorderColor">#E85BF11A</color>
     <color name="GreenMainLight">#03b55f</color>
     <color name="GreenMainLight02">#E937BB7B</color>
     <color name="GreenMainDark">#039d55</color>
