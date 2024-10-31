@@ -484,6 +484,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@color/drawarBgColor"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/GreenMainDark03"
         app:headerLayout="@layout/head_drawer_nav_menu"
         app:menu="@menu/drawer_nav_menu" />
 

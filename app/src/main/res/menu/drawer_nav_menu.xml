@@ -18,11 +18,11 @@
         android:title="Leave Application" />
     <item
         android:id="@+id/nav_logout4"
-        android:icon="@drawable/ic_drawar_menu"
+        android:icon="@drawable/ic_attendance_end_time"
         android:title="Password Change" />
     <item
         android:id="@+id/nav_logout5"
-        android:icon="@drawable/ic_drawar_menu"
+        android:icon="@drawable/ic_attendance_time_start"
         android:title="Logout" />
 </menu>
 
