@@ -477,6 +477,27 @@
 
     </LinearLayout>
 
+
+<!--    <LinearLayout-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:id="@+id/nav_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/drawer_item_bg">-->
+<!--        &lt;!&ndash; Navigation drawer with header and menu &ndash;&gt;-->
+<!--        <com.google.android.material.navigation.NavigationView-->
+<!--            android:id="@+id/navigation_view"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:background="@color/drawarBgColor"-->
+<!--            app:itemTextColor="@color/black"-->
+<!--            app:itemIconTint="@color/GreenMainDark03"-->
+<!--            app:headerLayout="@layout/head_drawer_nav_menu"-->
+<!--            app:menu="@menu/drawer_nav_menu" />-->
+<!--    </LinearLayout>-->
+
     <!-- Navigation drawer with header and menu -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"

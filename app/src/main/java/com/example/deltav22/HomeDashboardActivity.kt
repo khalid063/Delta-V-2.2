@@ -43,6 +43,7 @@ class HomeDashboardActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.nav_home -> {
                     // Handle "Home" action
+                    //mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.AppBorderColor))
                     true
                 }
                 R.id.nav_settings -> {
