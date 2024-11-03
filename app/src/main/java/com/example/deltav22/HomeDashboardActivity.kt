@@ -14,7 +14,9 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
+import me.ibrahimsn.lib.SmoothBottomBar
 
 class HomeDashboardActivity : AppCompatActivity() {
 
@@ -70,11 +72,45 @@ class HomeDashboardActivity : AppCompatActivity() {
             }
         }
 
+//        // Load the default fragment when the app starts
+//        showFragment(HomeFragment())
 
+        val bottomBar: SmoothBottomBar = findViewById(R.id.bottomBar)
+//        bottomBar.inflateMenu(R.menu.bottom_menu)
+
+        // Set up bottom bar menu items
+        bottomBar.onItemSelected = { position ->
+            when (position) {
+                0 -> showFragment(HomeFragment())
+                1 -> showFragment(AchievementFragment())
+                2 -> showFragment(ReportsFragment())
+            }
+            true
+        }
+
+
+        // Load the default fragment when the app starts
+        showFragment(HomeFragment())
 
 
 
     }
+    ///============================================================== Below of OnCreate ====================================================================///
+
+    //--- Fragment change Function ---///
+    private fun showFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .commit()
+    }
+
+
+
+
+
+
+
+
 }
 
 
