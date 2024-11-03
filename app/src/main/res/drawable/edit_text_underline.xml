@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Transparent background layer to retain EditText background transparency -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <!-- Underline layer with state-based color changes -->
+    <item android:bottom="2dp">
+        <selector>
+            <!-- Focused state: Red underline -->
+            <item android:state_focused="true">
+                <shape android:shape="rectangle">
+                    <size android:height="1dp" />
+                    <solid android:color="@color/pColorShadForStatusBar" />
+                </shape>
+            </item>
+
+            <!-- Default state: Green underline -->
+            <item>
+                <shape android:shape="rectangle">
+                    <size android:height="1dp" />
+                    <solid android:color="@color/AppBorderColor" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</layer-list>
+
+
+
+
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    &lt;!&ndash; Focused state: Red underline &ndash;&gt;-->
+<!--    <item android:state_focused="true">-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <size android:height="2dp" />-->
+<!--            <solid android:color="@color/GreenMainDark" />-->
+<!--        </shape>-->
+<!--    </item>-->
+
+<!--    &lt;!&ndash; Default state: Green underline &ndash;&gt;-->
+<!--    <item>-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <size android:height="2dp" />-->
+<!--            <solid android:color="@color/pColorShadForStatusBar" />-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--</selector>-->
