@@ -99,12 +99,11 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:padding="12dp"
-
             android:drawablePadding="10dp" />
 
         <!-- Login Button -->
         <Button
-            android:id="@+id/login_button"
+            android:id="@+id/id_login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
