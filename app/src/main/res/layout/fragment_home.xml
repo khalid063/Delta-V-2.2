@@ -67,7 +67,7 @@
                             <ImageView
                                 android:id="@+id/id_start_time"
                                 android:layout_width="wrap_content"
-                                android:layout_height="50dp"
+                                android:layout_height="35dp"
                                 android:layout_gravity="center"
                                 android:src="@drawable/ic_attendance_time_start"
                                 android:contentDescription="@string/logo_desc" />

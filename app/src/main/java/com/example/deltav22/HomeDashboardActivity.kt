@@ -23,8 +23,6 @@ class HomeDashboardActivity : AppCompatActivity() {
 
     private lateinit var drawerLayout: DrawerLayout
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_dashboard)
