@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.Gravity
 import android.view.MenuItem
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -22,16 +23,30 @@ class HomeDashboardActivity : AppCompatActivity() {
 
     private lateinit var drawerLayout: DrawerLayout
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_dashboard)
 
-        /// --- code for settings bar color change ( above the ToolBar)
+        /// --- code for settings bar color change ( above the ToolBar) ---///
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.statusBarColor = ContextCompat.getColor(this, R.color.pColorShadForStatusBar) // Replace with your color
         }
 
-        /// -------------------------------------------- Drawar setup code ----------------------------------------------///
+        //--- Load the default fragment when the app starts --///
+        showFragment(HomeFragment())
+
+
+        ///--- toolbar "LogOut Button" ---///
+        findViewById<LinearLayout>(R.id.id_toolbarLogoutArea).setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish() // Optional: finish the current activity if you don't want to return to it
+        }
+
+
+        ///============================================================== Drawar setup code ========================================================///
         drawerLayout = findViewById(R.id.drawer_layout)
         val navigationView: NavigationView = findViewById(R.id.navigation_view)
 
@@ -72,9 +87,7 @@ class HomeDashboardActivity : AppCompatActivity() {
             }
         }
 
-//        // Load the default fragment when the app starts
-//        showFragment(HomeFragment())
-
+        ///--- Bottom navbar fragment change code ---///
         val bottomBar: SmoothBottomBar = findViewById(R.id.bottomBar)
 //        bottomBar.inflateMenu(R.menu.bottom_menu)
 
@@ -89,8 +102,7 @@ class HomeDashboardActivity : AppCompatActivity() {
         }
 
 
-        // Load the default fragment when the app starts
-        showFragment(HomeFragment())
+
 
 
 
