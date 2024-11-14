@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.deltav22"
-        minSdk = 19
+        minSdk = 23
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -48,5 +48,11 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     // for bottom nav
     implementation ("com.github.ibrahimsn98:SmoothBottomBar:1.7.9")
+    // for Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("androidx.security:security-crypto:1.0.0")
+    implementation ("androidx.security:security-crypto:1.0.0-rc02")
+
 
 }
