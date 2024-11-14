@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,116 +8,121 @@
     android:background="@color/white"
     tools:context=".LoginActivity">
 
-
-    <LinearLayout
-        android:id="@+id/id_logoArea"
+    <!-- Wrapper Layout -->
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:orientation="vertical"
-        android:background="@color/transparent">
+        android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_centerInParent="true"
-            app:cardElevation="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardBackgroundColor="@android:color/white"
-            app:cardUseCompatPadding="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="8dp">
+        <!-- Company Logo -->
+        <LinearLayout
+            android:id="@+id/id_logoArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical"
+            android:background="@color/transparent">
 
-            <!-- Border around the card -->
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/card_border" />
-
-            <ImageView
-                android:id="@+id/logoImageView"
-                android:layout_width="wrap_content"
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_gravity="center"
-                android:src="@drawable/delta_logo_splash_screen"
-                android:contentDescription="@string/logo_desc"
-                android:padding="8dp" />
+                android:layout_centerInParent="true"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardUseCompatPadding="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp">
 
-        </androidx.cardview.widget.CardView>
+                <!-- Border around the card -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_border" />
+
+                <ImageView
+                    android:id="@+id/logoImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/delta_logo_splash_screen"
+                    android:contentDescription="@string/logo_desc"
+                    android:padding="8dp" />
+
+            </androidx.cardview.widget.CardView>
 
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <!-- Login Text -->
-    <TextView
-        android:layout_below="@+id/id_logoArea"
-        android:id="@+id/id_logiText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="35sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:text="Login"/>
-    <TextView
-        android:layout_below="@+id/id_logiText"
-        android:id="@+id/id_logiText02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_marginBottom="70dp"
-        android:textSize="15sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:text="Welcome to Delta App"/>
-
-    <LinearLayout
-        android:layout_below="@+id/id_logiText02"
-        android:id="@+id/id_loginForm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp"
-        android:gravity="center"
-        android:background="@color/white">
-
-        <!-- Username Field -->
-        <EditText
-            android:id="@+id/username_input"
+        <!-- Login Head Text -->
+        <TextView
+            android:layout_below="@+id/id_logoArea"
+            android:id="@+id/id_logiText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
-            android:inputType="text"
-            android:padding="12dp"
-            android:drawablePadding="10dp" />
-
-        <!-- Password Field -->
-        <EditText
-            android:id="@+id/password_input"
+            android:gravity="center_horizontal"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Login"/>
+        <TextView
+            android:layout_below="@+id/id_logiText"
+            android:id="@+id/id_logiText02"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:padding="12dp"
-            android:drawablePadding="10dp" />
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="70dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Welcome to Delta App"/>
 
-        <!-- Login Button -->
-        <Button
-            android:id="@+id/login_button"
+        <!-- Login UserName, Password, Login Button -->
+        <LinearLayout
+            android:layout_below="@+id/id_logiText02"
+            android:id="@+id/id_loginForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Login"
-            android:backgroundTint="@color/GreenMainLight"
-            android:textColor="@android:color/white"
-            android:padding="12dp"/>
-    </LinearLayout>
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center"
+            android:background="@color/white">
+
+            <!-- Username Field -->
+            <EditText
+                android:id="@+id/username_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="12dp"
+                android:drawablePadding="10dp" />
+
+            <!-- Password Field -->
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:drawablePadding="10dp" />
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Login"
+                android:backgroundTint="@color/GreenMainLight"
+                android:textColor="@android:color/white"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
 
 
 
 
-
-
-
-
-</RelativeLayout>
+</ScrollView>
