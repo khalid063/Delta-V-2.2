@@ -5,6 +5,7 @@ import android.os.Build
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -47,7 +48,8 @@ class HomeDashboardActivity : AppCompatActivity() {
                 onNoClicked = {
                     // "No" action
                     // For example, show a Toast message or perform some other action
-                    Toast.makeText(this, "Logout canceled", Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(this, "Logout canceled", Toast.LENGTH_SHORT).show()
+                    //showCustomToast("Logout canceled Done!")
                 }
             )
         }
@@ -156,6 +158,39 @@ class HomeDashboardActivity : AppCompatActivity() {
             .replace(R.id.fragment_container, fragment)
             .commit()
     }
+
+    fun showCustomToast(message: String) {
+        // Inflate custom Toast layout
+        val layoutInflater = layoutInflater
+        val layout = layoutInflater.inflate(R.layout.custom_toast_green, null)
+
+        // Set the message in the custom Toast
+        val toastMessage = layout.findViewById<TextView>(R.id.toast_message)
+        toastMessage.text = message  // Use the dynamic message here
+
+        // Create and display the Toast
+        val toast = Toast(applicationContext)
+        toast.duration = Toast.LENGTH_SHORT
+        toast.view = layout
+        toast.show()
+    }
+
+
+//    private fun showCustomToast(message: String) {
+//        // Inflate custom Toast layout
+//        val layoutInflater = layoutInflater
+//        val layout = layoutInflater.inflate(R.layout.custom_toast_green, null)
+//
+//        // Set the message in the custom Toast
+//        val toastMessage = layout.findViewById<TextView>(R.id.toast_message)
+//        toastMessage.text = message
+//
+//        // Create and display the Toast
+//        val toast = Toast(applicationContext)
+//        toast.duration = Toast.LENGTH_SHORT
+//        toast.view = layout
+//        toast.show()
+//    }
 
 
 

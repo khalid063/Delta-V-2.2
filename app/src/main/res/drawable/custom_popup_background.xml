@@ -2,5 +2,5 @@
     <!-- <solid android:color="@color/green" /> -->
     <solid android:color="@color/GreenMainLight" />
 
-    <corners android:radius="10dp" />
+    <corners android:radius="0dp" />
 </shape>
