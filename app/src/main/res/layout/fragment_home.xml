@@ -284,7 +284,7 @@
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:src="@drawable/ic_leave_application" />
+                    android:src="@drawable/ic_leave_application_5" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
