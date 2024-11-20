@@ -3,21 +3,18 @@ package com.example.deltav22
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
-import android.view.Gravity
-import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import com.example.deltav22.utils.showCustomPopup
 import com.google.android.material.navigation.NavigationView
 import me.ibrahimsn.lib.SmoothBottomBar
+
 
 class HomeDashboardActivity : AppCompatActivity() {
 
@@ -36,12 +33,58 @@ class HomeDashboardActivity : AppCompatActivity() {
         showFragment(HomeFragment())
 
 
-        ///--- toolbar "LogOut Button" ---///
+        ///--- toolbar "LogOut Button" with "Alart PopUp" ---///
         findViewById<LinearLayout>(R.id.id_toolbarLogoutArea).setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            finish() // Optional: finish the current activity if you don't want to return to it
+            showCustomPopup(
+                this,
+                "Are you sure you want to logout?",
+                onYesClicked = {
+                    // "Yes" action
+                    val intent = Intent(this, LoginActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                },
+                onNoClicked = {
+                    // "No" action
+                    // For example, show a Toast message or perform some other action
+                    Toast.makeText(this, "Logout canceled", Toast.LENGTH_SHORT).show()
+                }
+            )
         }
+
+
+
+//        findViewById<LinearLayout>(R.id.id_toolbarLogoutArea).setOnClickListener {
+//            // Create an AlertDialog
+//            val builder = AlertDialog.Builder(this)
+//            builder.setTitle("Logout Confirmation")
+//            builder.setMessage("Are you sure you want to logout?")
+//
+//            // Set up the "Yes" button
+//            builder.setPositiveButton("Yes") { dialog, _ ->
+//                // Perform logout action
+//                val intent = Intent(this, LoginActivity::class.java)
+//                startActivity(intent)
+//                finish() // Finish current activity
+//                dialog.dismiss() // Close the dialog
+//            }
+//
+//            // Set up the "No" button
+//            builder.setNegativeButton("No") { dialog, _ ->
+//                // Simply dismiss the dialog
+//                dialog.dismiss()
+//            }
+//
+//            // Show the AlertDialog
+//            builder.create().show()
+//        }
+
+
+//        findViewById<LinearLayout>(R.id.id_toolbarLogoutArea).setOnClickListener {
+//            val intent = Intent(this, LoginActivity::class.java)
+//            startActivity(intent)
+//            finish() // Optional: finish the current activity if you don't want to return to it
+//        }
 
 
         ///============================================================== Drawar setup code ========================================================///
