@@ -22,21 +22,20 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var sharedPrefManager: SharedPrefManager
 
 
+    /// ========================================================== OnCreate Section ========================================================= ///
     override fun onCreate(savedInstanceState: Bundle?) {
-
-        // Initialize sharedPrefManager
-        sharedPrefManager = SharedPrefManager(this)
-
-        /// ========================================================== OnCreate Section ==================================================== ///
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        // ---------- Initialize sharedPrefManager ---------- ///
+        sharedPrefManager = SharedPrefManager(this)
 
-        // Username and password input fields
-        val loginButton = findViewById<Button>(R.id.login_button)
+        // ---------- Username and password input fields
         val usernameInput = findViewById<EditText>(R.id.username_input)
         val passwordInput = findViewById<EditText>(R.id.password_input)
+        val loginButton = findViewById<Button>(R.id.login_button)
 
+        // ---------- Login Button Listener ---------- ///
         loginButton.setOnClickListener {
             val username = usernameInput.text.toString()
             val password = passwordInput.text.toString()
@@ -53,12 +52,9 @@ class LoginActivity : AppCompatActivity() {
             window.statusBarColor = ContextCompat.getColor(this, R.color.white)
         }
 
-
-
-
     }
 
-    /// ============================================================== below the "OnCreate" ====================================================== ///
+    /// ========================================================== below the "OnCreate" ====================================================== ///
 
     // ---------- Login function ----------///
     private fun login(username: String, password: String) {
